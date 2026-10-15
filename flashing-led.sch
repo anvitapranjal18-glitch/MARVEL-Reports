@@ -1,0 +1,228 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "555 Timer - LED Flash"
+Date "2020-06-15"
+Rev "1.0"
+Comp "Karl Noory"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R2
+U 1 1 5E206A85
+P 3850 1700
+F 0 "R2" H 3920 1746 50  0000 L CNN
+F 1 "470k" H 3920 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3780 1700 50  0001 C CNN
+F 3 "~" H 3850 1700 50  0001 C CNN
+	1    3850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E206292
+P 3850 1100
+F 0 "R1" H 3920 1146 50  0000 L CNN
+F 1 "100k" H 3920 1055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3780 1100 50  0001 C CNN
+F 3 "~" H 3850 1100 50  0001 C CNN
+	1    3850 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1150 3400 1150
+$Comp
+L Device:R R3
+U 1 1 5E206F64
+P 3400 1300
+F 0 "R3" H 3470 1346 50  0000 L CNN
+F 1 "270k" H 3470 1255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3330 1300 50  0001 C CNN
+F 3 "~" H 3400 1300 50  0001 C CNN
+	1    3400 1300
+	-1   0    0    1   
+$EndComp
+NoConn ~ 1800 1350
+$Comp
+L Device:CP C1
+U 1 1 5E207A44
+P 3850 2200
+F 0 "C1" H 3968 2246 50  0000 L CNN
+F 1 "1uF" H 3968 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 3888 2050 50  0001 C CNN
+F 3 "~" H 3850 2200 50  0001 C CNN
+	1    3850 2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 1750 1150 0    50   Input ~ 0
+tr_thr
+Text GLabel 2850 1550 2    50   Input ~ 0
+tr_thr
+Wire Wire Line
+	3850 1850 3850 1950
+Wire Wire Line
+	3850 1950 3850 2050
+Connection ~ 3850 1950
+Text GLabel 4000 1950 2    50   Input ~ 0
+tr_thr
+Wire Wire Line
+	3850 1950 4000 1950
+Text GLabel 2850 1350 2    50   Input ~ 0
+dis
+Wire Wire Line
+	3850 1250 3850 1350
+Text GLabel 4000 1350 2    50   Input ~ 0
+dis
+Wire Wire Line
+	3850 1350 4000 1350
+Connection ~ 3850 1350
+Wire Wire Line
+	3850 1350 3850 1550
+$Comp
+L power:GND #PWR0105
+U 1 1 5E23D595
+P 3850 2350
+F 0 "#PWR0105" H 3850 2100 50  0001 C CNN
+F 1 "GND" H 3855 2177 50  0000 C CNN
+F 2 "" H 3850 2350 50  0001 C CNN
+F 3 "" H 3850 2350 50  0001 C CNN
+	1    3850 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1150 1800 1150
+Wire Wire Line
+	2800 1350 2850 1350
+Wire Wire Line
+	2800 1550 2850 1550
+$Comp
+L power:GND #PWR0108
+U 1 1 5E267F0B
+P 2300 1750
+F 0 "#PWR0108" H 2300 1500 50  0001 C CNN
+F 1 "GND" H 2305 1577 50  0000 C CNN
+F 2 "" H 2300 1750 50  0001 C CNN
+F 3 "" H 2300 1750 50  0001 C CNN
+	1    2300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E22EB63
+P 3400 1750
+F 0 "#PWR0102" H 3400 1500 50  0001 C CNN
+F 1 "GND" H 3405 1577 50  0000 C CNN
+F 2 "" H 3400 1750 50  0001 C CNN
+F 3 "" H 3400 1750 50  0001 C CNN
+	1    3400 1750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1200 1450
+NoConn ~ 1200 1350
+NoConn ~ 1200 1250
+Connection ~ 800  1650
+Wire Wire Line
+	900  1650 800  1650
+Wire Wire Line
+	800  1650 800  1700
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5EF20575
+P 900 1250
+F 0 "J1" H 957 1717 50  0000 C CNN
+F 1 "USB_B_Micro" H 957 1626 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1050 1200 50  0001 C CNN
+F 3 "~" H 1050 1200 50  0001 C CNN
+	1    900  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5EECD5B3
+P 800 1700
+F 0 "#PWR02" H 800 1450 50  0001 C CNN
+F 1 "GND" H 805 1527 50  0000 C CNN
+F 2 "" H 800 1700 50  0001 C CNN
+F 3 "" H 800 1700 50  0001 C CNN
+	1    800  1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1050 1300 950 
+Wire Wire Line
+	1200 1050 1300 1050
+$Comp
+L Timer:NE555D U1
+U 1 1 5EE70402
+P 2300 1350
+F 0 "U1" H 2300 1400 50  0000 C CNN
+F 1 "NE555D" H 2300 1300 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3150 950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 3150 950 50  0001 C CNN
+	1    2300 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5E2041F3
+P 3400 1600
+F 0 "D1" V 3347 1678 50  0000 L CNN
+F 1 "LED" V 3438 1678 50  0000 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 3400 1600 50  0001 C CNN
+F 3 "~" H 3400 1600 50  0001 C CNN
+	1    3400 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 5EE7D818
+P 1300 950
+F 0 "#PWR01" H 1300 800 50  0001 C CNN
+F 1 "+5V" H 1315 1123 50  0000 C CNN
+F 2 "" H 1300 950 50  0001 C CNN
+F 3 "" H 1300 950 50  0001 C CNN
+	1    1300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5EE7E07D
+P 2300 950
+F 0 "#PWR03" H 2300 800 50  0001 C CNN
+F 1 "+5V" H 2315 1123 50  0000 C CNN
+F 2 "" H 2300 950 50  0001 C CNN
+F 3 "" H 2300 950 50  0001 C CNN
+	1    2300 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5EE7E551
+P 3850 950
+F 0 "#PWR04" H 3850 800 50  0001 C CNN
+F 1 "+5V" H 3865 1123 50  0000 C CNN
+F 2 "" H 3850 950 50  0001 C CNN
+F 3 "" H 3850 950 50  0001 C CNN
+	1    3850 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR05
+U 1 1 5EE80CC8
+P 1600 1550
+F 0 "#PWR05" H 1600 1400 50  0001 C CNN
+F 1 "+5V" H 1615 1723 50  0000 C CNN
+F 2 "" H 1600 1550 50  0001 C CNN
+F 3 "" H 1600 1550 50  0001 C CNN
+	1    1600 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1550 1800 1550
+$EndSCHEMATC

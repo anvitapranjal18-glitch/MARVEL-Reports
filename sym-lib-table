@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "flashing-led-cache") (type "Legacy") (uri "/Users/macbookpro/Desktop/555_Flasher_Complete/flashing-led-cache.lib") (options "") (descr "Legacy project cache library"))
+)
