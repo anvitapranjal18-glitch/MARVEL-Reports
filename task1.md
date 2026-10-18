@@ -460,7 +460,7 @@ Rload y 0 100k
 .end
 ```
 
-![AND gate SPICE code](and_code.jpeg)
+![AND gate SPICE code](AND_CODE.jpeg)
 
 \_
 
@@ -489,7 +489,7 @@ B changes twice as fast as A, so all four input combinations (00, 01, 10, 11) ap
 
 ### 5.4 Waveform
 
-![AND gate waveform](and_waveform.jpeg)
+![AND gate waveform](AND_WAVEFORM.jpeg)
 
 ### 5.5 Observations
 
