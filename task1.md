@@ -2025,11 +2025,7 @@ A **PLA** was chosen for this design.
 
 The circuit has four AND gates (P1 to P4, where P4 is the O input going straight through) and three OR gates, one for each light. The override O goes into all three OR gates. The AND gates make M·L, M·L·T and M·T.
 
-### 5.10 Verification
 
-The screenshot above shows the inputs M = 1, L = 0, T = 1 and O = 0. The truth table row for this input is L1 = 0, L2 = 0 and L3 = 1, and the circuit shows the same: L1 and L2 are off and L3 is on.
-
-[Add 2 or 3 more tests if you did them, for example: O = 1 turns all three lights on, M = 1, L = 1, T = 0, O = 0 turns only L1 on.]
 
 ---
 
