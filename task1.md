@@ -1363,7 +1363,7 @@ The schematic was reviewed to ensure that the component connections matched the 
 
 Insert your KiCad schematic screenshot here.
 
-![NE555 Schematic Capture](schematic_capture.png)
+![NE555 Schematic Capture](schematic.png)
 
 ---
 
